@@ -14,7 +14,7 @@ The planned content is organized into three parts:
 | Part | Deliverable | What it includes |
 | --- | --- | --- |
 | 1 | **Solution - Base Data Model** | The base data model used by the demonstration. Requires an environment with **Dynamics 365 Field Service** installed. |
-| 2 | **Source Code - Apps** | Source code for the **Yard Checkin** Code App and **Fleet Command** in **Copilot Managed Runtime**, so you can explore how they were built and adapt them. |
+| 2 | **Source Code - Apps** | Source code for the **[Yard Checkin](./YardCheckin/)** Code App and **Fleet Command** in **Copilot Managed Runtime**, so you can explore how they were built and adapt them. |
 | 3 | **Solution - Copilot Studio** | The Copilot Studio workflow, agents, and business skills that combine **deterministic rules** with **agentic reasoning**. |
 
 ### 1. Base data model
@@ -27,7 +27,7 @@ The foundation for the equipment return scenario, packaged as a solution.
 
 Explore the experiences shown in the session:
 
-- **Yard Checkin** - the Code App.
+- **[Yard Checkin](./YardCheckin/)** - the Code App.
 - **Fleet Command** - the experience in Copilot Managed Runtime.
 
 The source code will let you inspect the implementation and make it your own. App-specific setup and configuration instructions will accompany the source.
@@ -40,7 +40,7 @@ Solution-specific setup and configuration instructions will accompany the packag
 
 ## Availability
 
-The solution packages and app source code described above have **not yet been added** to this repository. Deployment instructions, configuration requirements, and artifact locations will be documented as each deliverable is published.
+The [Yard Checkin app directory](./YardCheckin/) is available in this repository. Deployment instructions, configuration requirements, and artifact locations will be documented as each deliverable is published.
 
 ## Before you start
 
@@ -48,12 +48,6 @@ The solution packages and app source code described above have **not yet been ad
 - Ensure **Dynamics 365 Field Service** is installed in the environment where you plan to deploy the base data model.
 - Review the prerequisites and dependencies supplied with each deliverable before deploying it.
 - Use demo or synthetic data while experimenting.
-
-## Repository link
-
-Share the session link: **https://aka.ms/ppcc26-mfm-repo**
-
-Direct repository: [github.com/bcaauwe/ppcc26-mfm](https://github.com/bcaauwe/ppcc26-mfm)
 
 ## License
 
