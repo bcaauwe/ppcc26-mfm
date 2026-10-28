@@ -15,7 +15,7 @@ The session assets are organized into three parts:
 | --- | --- | --- |
 | 1 | **[Solution - Base Data Model](./Solutions/)** | The unmanaged base data model solution used by the demonstration. Requires an environment with **Dynamics 365 Field Service** installed. |
 | 2 | **Source Code - Apps** | Source code for the **[Yard Checkin](./YardCheckin/)** Code App and **[Fleet Command](./FleetCommand/)** in **Copilot Managed Runtime**, so you can explore how they were built and adapt them. |
-| 3 | **Solution - Copilot Studio** | The Copilot Studio workflow, agents, and business skills that combine **deterministic rules** with **agentic reasoning**. |
+| 3 | **[Solution - Process Orchestration](./Solutions/PPCCMFMOrchestration_unmanaged.zip)** | The unmanaged process workflow solution for the Copilot Studio orchestration demonstrated in the session, combining **deterministic rules** with **agentic reasoning**. |
 
 ### 1. Base data model
 
@@ -44,21 +44,35 @@ Explore the experiences shown in the session:
 
 The source code will let you inspect the implementation and make it your own. App-specific setup and configuration instructions will accompany the source.
 
-### 3. Copilot Studio solution
+### 3. Process orchestration solution
 
-Explore how the scenario combines a Copilot Studio workflow, agents, and business skills, using deterministic rules alongside agentic reasoning.
+Explore the process workflow behind the equipment return scenario with **PPCCMFMOrchestration**, packaged as an **unmanaged solution**. The session demonstrates how a Copilot Studio workflow, agents, and business skills combine deterministic rules with agentic reasoning.
 
-Solution-specific setup and configuration instructions will accompany the package.
+**Download:** [Process orchestration - unmanaged solution](./Solutions/PPCCMFMOrchestration_unmanaged.zip)
+
+**Prerequisites:** Use the same **non-production** environment as the base data model, with **Dynamics 365 Field Service** installed. Import the base solution first.
+
+#### Import the orchestration solution
+
+1. Download the orchestration ZIP linked above. Do not extract it before importing.
+2. Open [Power Apps](https://make.powerapps.com) and select the environment where you imported the base solution.
+3. Go to **Solutions > Import solution** and upload the orchestration ZIP.
+4. Review and resolve any missing dependencies. If prompted, configure connection references and environment variable values for your demo environment.
+5. Complete the import and confirm it succeeds before configuring or running the process workflow.
+6. Review the imported workflow's connections and configuration, then test it with demo or synthetic data before using it with the apps.
+
+As with the base solution, deleting this unmanaged solution container does **not** remove its components.
 
 ## Availability
 
 Available in this repository:
 
 - [Base data model - unmanaged solution v1.0.0.0](./Solutions/PPCCMFMCore_1_0_0_0.zip)
+- [Process orchestration - unmanaged solution](./Solutions/PPCCMFMOrchestration_unmanaged.zip)
 - [Yard Checkin app directory](./YardCheckin/)
 - [Fleet Command app directory](./FleetCommand/)
 
-The **Copilot Studio solution** is forthcoming. Additional deployment instructions and configuration requirements will be documented as each deliverable is published.
+Both unmanaged solution packages and both app directories are available. Additional workflow-specific configuration instructions will be documented as they are published.
 
 ## Before you start
 
