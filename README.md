@@ -7,21 +7,33 @@ Want to try it yourself? This repository is intended to bring together the solut
 > **DO NOT DEPLOY IN PRODUCTION.**
 > These assets are for demonstration, learning, and experimentation. Use a dedicated development or demo environment, not a production environment.
 
-## What is coming
+## Repository contents
 
-The planned content is organized into three parts:
+The session assets are organized into three parts:
 
 | Part | Deliverable | What it includes |
 | --- | --- | --- |
-| 1 | **Solution - Base Data Model** | The base data model used by the demonstration. Requires an environment with **Dynamics 365 Field Service** installed. |
+| 1 | **[Solution - Base Data Model](./Solutions/)** | The unmanaged base data model solution used by the demonstration. Requires an environment with **Dynamics 365 Field Service** installed. |
 | 2 | **Source Code - Apps** | Source code for the **[Yard Checkin](./YardCheckin/)** Code App and **[Fleet Command](./FleetCommand/)** in **Copilot Managed Runtime**, so you can explore how they were built and adapt them. |
 | 3 | **Solution - Copilot Studio** | The Copilot Studio workflow, agents, and business skills that combine **deterministic rules** with **agentic reasoning**. |
 
 ### 1. Base data model
 
-The foundation for the equipment return scenario, packaged as a solution.
+The foundation for the equipment return scenario, packaged as an **unmanaged solution** so you can explore and customize its components.
+
+**Download:** [Base solution v1.0.0.0](./Solutions/PPCCMFMCore_1_0_0_0.zip)
 
 **Prerequisite:** Deploy this solution only to a non-production environment with **Dynamics 365 Field Service** installed.
+
+#### Import the base solution
+
+1. Download the solution ZIP linked above. Do not extract it before importing.
+2. Open [Power Apps](https://make.powerapps.com) and select your intended **non-production** environment.
+3. Go to **Solutions > Import solution** and upload the ZIP.
+4. Review the solution details and any dependency requirements, resolve missing dependencies, and complete the import.
+5. Confirm the import succeeds and the solution appears in the environment before proceeding with the apps.
+
+Unmanaged solution components become editable customizations in the target environment. Deleting the solution container does **not** remove those components; use a dedicated demo or development environment.
 
 ### 2. App source code
 
@@ -40,7 +52,13 @@ Solution-specific setup and configuration instructions will accompany the packag
 
 ## Availability
 
-The [Yard Checkin app directory](./YardCheckin/) and [Fleet Command app directory](./FleetCommand/) are available in this repository. Deployment instructions, configuration requirements, and artifact locations will be documented as each deliverable is published.
+Available in this repository:
+
+- [Base data model - unmanaged solution v1.0.0.0](./Solutions/PPCCMFMCore_1_0_0_0.zip)
+- [Yard Checkin app directory](./YardCheckin/)
+- [Fleet Command app directory](./FleetCommand/)
+
+The **Copilot Studio solution** is forthcoming. Additional deployment instructions and configuration requirements will be documented as each deliverable is published.
 
 ## Before you start
 
