@@ -41,8 +41,10 @@ Explore the experiences shown in the session:
 
 - **[Yard Checkin](./YardCheckin/)** - the Code App.
 - **[Fleet Command](./FleetCommand/)** - the experience in Copilot Managed Runtime.
+  Follow the [beginner setup instructions](./FleetCommand/INSTRUCTIONS.md) to
+  initialize your own app, connect its data sources, preview and publish.
 
-The source code will let you inspect the implementation and make it your own. App-specific setup and configuration instructions will accompany the source.
+The source code will let you inspect the implementation and make it your own.
 
 ### 3. Process orchestration solution
 

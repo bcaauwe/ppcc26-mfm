@@ -7,6 +7,9 @@ needs and asset economics into one workspace for fleet coordinators. Move from
 a fleet-wide snapshot to the evidence behind an individual asset, or explore
 the operation in an interactive 3D view.
 
+**Want to run your own copy?** Follow the [beginner setup instructions](INSTRUCTIONS.md)
+from installation and app initialization through data connections, preview and publishing.
+
 ## What you can do
 
 - **Find equipment ready for the next job.** Search by asset, equipment class or
