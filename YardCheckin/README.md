@@ -11,6 +11,10 @@ A Power Apps Code App for checking rental equipment back into the yard. Staff se
 
 Built with React, TypeScript, Vite, and Fluent UI React v9, the app uses a tablet-first layout with responsive mobile support and Summit Equipment sample branding.
 
+**Want to run your own copy?** Follow the [beginner setup instructions](INSTRUCTIONS.md)
+to prepare the environment, initialize a Code App, add its data sources and flows,
+test locally, and publish.
+
 ## App Overview
 
 ### Outstanding Returns
@@ -105,7 +109,8 @@ The app expects the following tables and their associated columns, relationships
 | Contacts | `contact` | Customer check-in contact details |
 | Condition Photos | `msftmfm_conditionphoto` | Booking-linked images, capture times, angle types, analysis results and summaries, photo IDs, and submission status |
 
-Dataverse access uses the generated TypeScript models and services in [src/generated](src/generated/).
+Dataverse access uses CLI-generated TypeScript models and services in
+`src/generated`. This folder is ignored by Git and recreated during setup.
 
 ### Connectors & Cloud Flows
 
@@ -135,7 +140,12 @@ The consolidation flow accepts the individual analysis results as text and retur
 
 ### Environment Configuration
 
-The checked-in [power.config.json](power.config.json) contains the original sample app's environment, app, connection, and workflow references. **Reconfigure these for your target environment before running or deploying your own copy.** Installing npm dependencies does not provision the Dataverse schema or cloud flows.
+`power.config.json` is local, CLI-managed configuration and is ignored by Git.
+Follow the [setup instructions](INSTRUCTIONS.md) to create your own app binding
+and generate its services. Installing npm dependencies does not provision the
+Dataverse schema or cloud flows. Both required analysis flows are included in
+the repository's base solution; configure their connections and prompts in your
+target environment.
 
 Use the Power Apps CLI to initialize or bind your own app and configure its data sources. Keep the generated service names and contracts aligned with the imports used by this sample; do not manually edit generated services to substitute connection IDs.
 
@@ -143,15 +153,16 @@ See Microsoft's [Power Apps Code Apps documentation](https://learn.microsoft.com
 
 ### Local Development
 
-From the repository root:
+After completing setup, run from your initialized working app folder:
 
 ```powershell
-cd .\YardCheckin
-npm install
-npm run dev -- --port 3000 --strictPort
+pa app run
 ```
 
-The port matches the local app URL configured in [power.config.json](power.config.json). Use the Power Apps development experience provided by the Vite plugin and sign in to the configured environment to exercise connector-backed features.
+Open the **Local Play** URL printed by the CLI in your tenant's browser profile.
+See the [local development instructions](INSTRUCTIONS.md#10-run-locally-through-power-apps)
+for port configuration and the two-terminal alternative. Local testing writes
+to the connected Dataverse environment; use synthetic records.
 
 ### Validation & Build
 

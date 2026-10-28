@@ -40,6 +40,8 @@ Unmanaged solution components become editable customizations in the target envir
 Explore the experiences shown in the session:
 
 - **[Yard Checkin](./YardCheckin/)** - the Code App.
+  Follow the [beginner setup instructions](./YardCheckin/INSTRUCTIONS.md) to
+  initialize your own app, connect its tables and analysis flows, test and publish.
 - **[Fleet Command](./FleetCommand/)** - the experience in Copilot Managed Runtime.
   Follow the [beginner setup instructions](./FleetCommand/INSTRUCTIONS.md) to
   initialize your own app, connect its data sources, preview and publish.
