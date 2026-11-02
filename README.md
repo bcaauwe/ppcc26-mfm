@@ -7,6 +7,14 @@ Want to try it yourself? This repository is intended to bring together the solut
 > **DO NOT DEPLOY IN PRODUCTION.**
 > These assets are for demonstration, learning, and experimentation. Use a dedicated development or demo environment, not a production environment.
 
+## Watch the demo
+
+**[Watch the prerecorded Equipment Return Reimagined demo on YouTube](https://youtu.be/LHMdsax8_1I)**
+
+[![Watch the Equipment Return Reimagined demo on YouTube](https://img.youtube.com/vi/LHMdsax8_1I/hqdefault.jpg)](https://youtu.be/LHMdsax8_1I)
+
+Select the thumbnail or link above to play the demo on YouTube.
+
 ## Repository contents
 
 The session assets are organized into three parts:
